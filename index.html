@@ -12,20 +12,26 @@
         <img class="conteudo__animacaoRamster" src="assets/animacaoRamster.gif" alt="animacaoRamster">
         <h2>Decodificador de textos</h2>
     </header>
-    <main class="conteudo">
-        <section class="conteudo__Boxs">
-            <div class="Conteudo__Boxs__Criptografar">
-            <input type="text" placeholder="Digite seu texto">
-            <p>Apenas letras minusculas e sem acento!</p>
-            <button>Criptografar</button>
-            <button>Desgriptografar</button>
+    <main>
+        <section class="quadro">
+            <div class="quadro__Esquerda">
+                <textarea class="input" id="input-text" cols="30" rows="10" placeholder="Digite seu texto..."></textarea>
+                <p class="quadro__Esquerda__Informacoes">Apenas letras minusculas e sem acento!</p>
+                <div class="quadro__Esquerda__Botoes">
+                    <button>Criptografar</button>
+                    <button>Descriptografar</button>
+                </div>
             </div> 
-            <p>Mensagem saida</p>
+            <div class="quadro__Direita">
+                <textarea class="output" placeholder="O texto sairá aqui." id="output-text" cols="30" rows="10" readonly></textarea>
+                <button id="copy" onclick="copyText()">Copiar</button>
+            </div>
+            
         </section>
     </main>
 
     <footer class="rodape">
-        <p>Desenvolvido por Denner.</p>
+        <p>© Desenvolvido por Denner.</p>
     </footer> 
 </body>
 </html>
