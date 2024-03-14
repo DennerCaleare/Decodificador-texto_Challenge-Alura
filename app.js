@@ -3,6 +3,8 @@ const textOutput = document.querySelector(".output");
 const btnCript = document.querySelector(".quadro__Esquerda__Botoes button#cript");
 const btnDecript = document.querySelector(".quadro__Esquerda__Botoes button#decript");
 const btnCopy = document.querySelector(".quadro__Direita button#copy");
+const btnTransfer = document.querySelector(".quadro__Direita button#transfer");
+
 
 const handleCriptText = e => {
     let textToCript = criptText(textInput.value);
@@ -23,6 +25,10 @@ function copyText() {
         .catch(() => {
             alert ("Não foi possivel copiar o texto");
         })
+}
+
+function transferText() {
+    textInput.value = textOutput.value;
 }
 
 const criptText= (text, cript = true) => {
@@ -46,3 +52,4 @@ const criptText= (text, cript = true) => {
 btnCript.addEventListener("click", handleCriptText);
 btnDecript.addEventListener("click", handleDecriptText);
 btnCopy.addEventListener("click", copyText)
+btnTransfer.addEventListener("click", transferText);
