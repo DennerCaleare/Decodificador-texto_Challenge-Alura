@@ -109,10 +109,31 @@ textarea.input:focus{
     background-color: #8FB0FF;
 }
 
+.quadro__Direita {
+    position: relative;
+}
+
+.quadro__Direita button{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    background-color: #A272FC;
+    border-radius: 16px;
+    border: none;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.quadro__Direita button:hover{
+    background-color: #8FB0FF;
+}
+
 
 footer{
     position: fixed;
     bottom: 0;
     width: 100%;
+    color: #7472FC;
     text-align: center;
 }
